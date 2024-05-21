@@ -96,6 +96,38 @@ const newNumbers = (numbers) => {
 
 newNumbers([3, 6, 9, 2, 4]);
 
+const dniLetter = (dniNum) => {
+  const newArray = [
+    "T",
+    "R",
+    "W",
+    "A",
+    "G",
+    "M",
+    "Y",
+    "F",
+    "P",
+    "D",
+    "X",
+    "B",
+    "N",
+    "J",
+    "Z",
+    "S",
+    "Q",
+    "V",
+    "H",
+    "L",
+    "C",
+    "K",
+    "E",
+  ];
+  const dniNumber = dniNum % 23;
+  console.log(`${dniNum} ${newArray[dniNumber]}`);
+};
+
+dniLetter('05446621');
+
 const trheeWords = (words) => {
   const upperLetters = [];
   const wordA = words[0];
