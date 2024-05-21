@@ -96,29 +96,26 @@ const newNumbers = (numbers) => {
 
 newNumbers([3, 6, 9, 2, 4]);
 
-const dniLetter = (syla) => {};
-dniLetter([
-  "T",
-  "R",
-  "W",
-  "A",
-  "G",
-  "M",
-  "Y",
-  "F",
-  "P",
-  "D",
-  "X",
-  "B",
-  "N",
-  "J",
-  "Z",
-  "S",
-  "Q",
-  "V",
-  "H",
-  "L",
-  "C",
-  "K",
-  "E",
-]);
+const trheeWords = (words) => {
+  const upperLetters = [];
+  const wordA = words[0];
+  const wordB = words[1];
+  const wordC = words[2];
+  const firstLetterA = wordA.charAt(0);
+  const lastLetterA = wordA.charAt(wordA.length - 1);
+  const firstLetterB = wordB.charAt(0);
+  const lastLetterB = wordB.charAt(wordB.length - 1);
+  const firstLetterC = wordC.charAt(0);
+  const lastLetterC = wordC.charAt(wordC.length - 1);
+  const uwu = upperLetters.push(
+    firstLetterA.toUpperCase() +
+      lastLetterA.toUpperCase() +
+      firstLetterB.toUpperCase() +
+      lastLetterB.toUpperCase() +
+      firstLetterC.toUpperCase() +
+      lastLetterC.toUpperCase()
+  );
+  console.log(upperLetters);
+};
+
+trheeWords(["dulce", "hogar", "ñam"]);
